@@ -1,0 +1,127 @@
+/* ===== VARIABLES ===== */
+:root {
+  --header-height: 4rem;
+
+  /* Colors */
+  --clr-primary-100: hsl(73 6% 95%);
+  --clr-primary-200: hsl(73 6% 54%);
+  --clr-primary-400: hsl(73 6% 24%);
+  --clr-primary-600: hsl(73 5% 16%);
+  --clr-primary-900: hsl(73 6% 3%);
+
+  --clr-accent-400: hsl(28 35% 68%);
+  --clr-accent-500: hsl(28 35% 58%);
+
+  --clr-neutral-200: hsl(0 0% 90%);
+  --clr-neutral-100: hsl(0 0% 100%);
+
+  --clr-white: #fff;
+
+  /* Font & Typography */
+  --ff-body: "Montserrat", sans-serif;
+  --ff-accent: "Prata", serif;
+
+  --fs-base: 1rem;
+
+  --fs-6xs: calc(var(--fs-base) * 0.25);
+  --fs-5xs: calc(var(--fs-base) * 0.3125);
+  --fs-4xs: calc(var(--fs-base) * 0.375);
+  --fs-3xs: calc(var(--fs-base) * 0.5);
+  --fs-2xs: calc(var(--fs-base) * 0.625);
+  --fs-xs: calc(var(--fs-base) * 0.75);
+  --fs-sm: calc(var(--fs-base) * 0.875);
+  --fs-md: var(--fs-base);
+  --fs-lg: calc(var(--fs-base) * 1.25);
+  --fs-xl: calc(var(--fs-base) * 1.5);
+  --fs-2xl: calc(var(--fs-base) * 2);
+  --fs-3xl: calc(var(--fs-base) * 2.5);
+  --fs-4xl: calc(var(--fs-base) * 3);
+  --fs-5xl: calc(var(--fs-base) * 3.75);
+  --fs-6xl: calc(var(--fs-base) * 4.5);
+
+  --fs-h1: var(--fs-3xl);
+  --fs-h2: calc(var(--fs-2xl) * 1.1);
+  --fs-h3: var(--fs-xl);
+  --fs-h4: var(--fs-lg);
+  --fs-h5: var(--fs-md);
+  --fs-h6: var(--fs-xs);
+
+  --fw-100: 100;
+  --fw-200: 200;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  --fw-900: 900;
+
+  --line-height: 1.7;
+  --letter-spacing-md: 1px;
+
+  /* Margins & Paddings */
+  --spacing-base: 1rem;
+
+  --spacing-6xs: calc(var(--spacing-base) * 0.25);
+  --spacing-5xs: calc(var(--spacing-base) * 0.3125);
+  --spacing-4xs: calc(var(--spacing-base) * 0.375);
+  --spacing-3xs: calc(var(--spacing-base) * 0.5);
+  --spacing-2xs: calc(var(--spacing-base) * 0.625);
+  --spacing-xs: calc(var(--spacing-base) * 0.75);
+  --spacing-sm: calc(var(--spacing-base) * 0.875);
+  --spacing-md: var(--spacing-base);
+  --spacing-lg: calc(var(--spacing-base) * 1.25);
+  --spacing-xl: calc(var(--spacing-base) * 1.5);
+  --spacing-2xl: calc(var(--spacing-base) * 2);
+  --spacing-3xl: calc(var(--spacing-base) * 2.5);
+  --spacing-4xl: calc(var(--spacing-base) * 3);
+  --spacing-5xl: calc(var(--spacing-base) * 3.75);
+  --spacing-6xl: calc(var(--spacing-base) * 4.5);
+
+  --gap: var(--spacing-lg);
+
+  /* Timing */
+  --timing: 0.3s;
+
+  /* z index */
+  --z-fixed: 1000;
+  --z-top: 10000;
+}
+.join-us {
+  margin-top: var(--spacing-6xl);
+  max-width: 1000px;
+}
+.join-us .wrapper {
+  margin-top: var(--spacing-4xl);
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: calc(var(--gap) * 2);
+}
+.join-us .info,
+.join-us .form {
+  flex-basis: 100%;
+}
+@media (min-width: 768px) {
+  .join-us .info,
+  .join-us .form {
+    flex-basis: 50%;
+  }
+}
+.join-us .wrapper .info p {
+  font-weight: var(--fw-400);
+  font-size: large;
+}
+.join-us .form input {
+  width: 100%;
+}
+.join-us .form input[type="email"] {
+  background-color: transparent;
+  border: 1px solid var(--clr-primary-400);
+}
+.join-us .wrapper .form .main-btn {
+  margin: var(--spacing-2xs) 0;
+}
+.join-us .wrapper .form span {
+  font-size: var(--fs-sm);
+  line-height: var(--line-height);
+}
